@@ -1,11 +1,13 @@
 package ecommerce.application;
 
+import ecommerce.annotation.Fancy;
 import ecommerce.data.LoginRequest;
 import ecommerce.error.BlankException;
 import ecommerce.error.ValidationException;
 import ecommerce.util.ValidationUtil;
 
 public class ValidationApp {
+    @Fancy(name = "ValidationApp", tags = {"application", "java"})
     public static void main(String[] args) {
         LoginRequest loginRequest = new LoginRequest(null, "pswd");
         try {
